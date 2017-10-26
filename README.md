@@ -9,6 +9,9 @@ How to use?
     LGCursor *cursor;
 }
 
+
+
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
     cursor = [LGCursor cursorWithNormalSize:CGSizeMake(25, 25) normalImage:[NSImage imageNamed:@"presenter-pointer_red2.png"] pressSize:CGSizeMake(15, 15) pressImage:[NSImage imageNamed:@"presenter-pointer_red.png"]];
@@ -25,8 +28,15 @@ How to use?
 //    });
 }
 
+
+
+
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
     [cursor stop];
 }
+
+
+
+
 @end
